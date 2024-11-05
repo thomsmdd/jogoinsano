@@ -48,6 +48,7 @@ function gameOver() {
   isGameOver = true;
   clearInterval(obstacleInterval);
   scoreElement.innerHTML = "Game Over! Pontos: " + score;
+  obstacle.style.animation = "none"; // Para o movimento do obstáculo
 }
 
 // Função para atualizar o score
@@ -84,4 +85,3 @@ let obstacleInterval = setInterval(() => {
   moveObstacle();
   checkCollision();
 }, 20);
-
