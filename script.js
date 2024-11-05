@@ -46,7 +46,7 @@ function checkCollision() {
 // Função para fim de jogo
 function gameOver() {
   isGameOver = true;
-  clearInterval(obstacleInterval);
+  clearInterval(obstacleInterval);  // Para a animação do obstáculo
   scoreElement.innerHTML = "Game Over! Pontos: " + score;
   obstacle.style.animation = "none"; // Para o movimento do obstáculo
 }
